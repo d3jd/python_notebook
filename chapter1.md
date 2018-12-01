@@ -11,10 +11,10 @@
 * Python可以当作一个**超级计算器**来使用
 
 ### 编辑器下载
-**编辑器**是编写源代码的**最重要工具**
-我们使用的对初学者友好的**mu-editor**编辑器
-第三基地下载地址：https://www.jianguoyun.com/p/DVC9QLUQlcalBhjJ8okB
-也可以在英文官网下载：https://codewith.mu/en/download
+* **编辑器**是编写源代码的**最重要工具**
+* 我们使用的对初学者友好的**mu-editor**编辑器
+* 第三基地下载地址：https://www.jianguoyun.com/p/DVC9QLUQlcalBhjJ8okB  
+* 也可以在英文官网下载：https://codewith.mu/en/download
 
 ### 四则运算符号
 运算  | 符号
