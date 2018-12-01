@@ -1,6 +1,5 @@
-# Table of content
+# Summary
 
-* [First Chapter](chapter1.md)
-
-
+* [Introduction](README.md)
+* [第01课-初识代码编程](chapter1.md)
 
