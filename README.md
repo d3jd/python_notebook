@@ -1,3 +1,5 @@
-# My Awesome Book
+# 课程介绍
 
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
+这学期我们将学习Python这一
+
+超级计算器，网络爬虫，密码学，2D游戏，人工智能
