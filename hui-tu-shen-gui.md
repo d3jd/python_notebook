@@ -12,7 +12,20 @@
     * 魔法图书馆 = Python 编程语言
     * 魔法书 = 模块
     * 魔法 = 函数
-    
+* for in 循环：
+    * 循环是重复执行一段指令的方法
+    * 写法：
+    ```python
+    for index in range(4):
+        print("Hello World!")
+    ```
+    * 解释：
+        * index: 一个记录现在循环到第几次的循环
+        * range(4): 括号中的数字表示重复几次
+        * print(): 在这个例子中要重复执行的指令
+
+
+
 
 ### Turtle 模块的使用方法
 
@@ -21,32 +34,48 @@
 import turtle
 ```
 
-导入模块：
+turtle **前进 100步**：
 ```python
-import turtle
+turtle.forward(100)
 ```
 
-导入模块：
+turtle **后退 100步**：
 ```python
-import turtle
+turtle.back(100)
 ```
 
-导入模块：
+turtle **左转 90度**：
 ```python
-import turtle
+turtle.left(90)
 ```
 
+turtle **右转 90度**：
+```python
+turtle.right(90)
+```
 
+### Turtle 模块例子
 
+turtle **画正放形**：
+```python
+for index in range(4):
+    forward(100)
+    right(90)
+```
+turtle **画三角形**：
+```python
+for index in range(3):
+    forward(100)
+    right(120)
+```
 
-### 变量可以储存各种东西
-
-数据类型 | 例子 | 解释
---- | --- | ---
-整数 (integer) | 2 | 数学中的整数
-浮点数 (float) | 2.5 | 数学中的小数
-字符串 (string) | "魔法" | 有引号就是字符串
-逻辑值 (boolean) | True 和 False | 只有True和False两种
+turtle **画n边形**：
+```python
+n = 20
+for index in range(n):
+    forward(30)
+    right(360 / n)
+```
 
 
 ---
@@ -57,11 +86,11 @@ import turtle
 
 中文 | 英文
 --- | ---
-类型 | type
-整数 | integer
-浮点数 | float
-字符串 | string
-逻辑值 | boolean
+导入 | import
+循环 | loop
+函数 | function
+索引 | index
+范围 | range
 
 
 ## 课后作业 2: 编程题
