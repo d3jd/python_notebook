@@ -17,6 +17,7 @@
 ### 函数的用法
 例子：创建一个能画正放形的函数
 ```python
+import turtle
 def draw_square():
     for i in range(4):
         turtle.forward(150)
