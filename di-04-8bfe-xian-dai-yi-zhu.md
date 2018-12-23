@@ -56,15 +56,18 @@ turtle.forward(x)
 **例子：现代艺术**：
 
 ```python
+# 导入模块
 import turtle
 import random
 
+# 随机选取颜色函数
 def random_color():
   red = random.randint(0, 255)
   green = random.randint(0, 255)
   blue = random.randint(0, 255)
   turtle.color(red, green, blue)
 
+# 随机选择位置函数
 def random_place():
   turtle.penup()
   x = random.randint(-100, 100)
@@ -72,22 +75,27 @@ def random_place():
   turtle.goto(x, y)
   turtle.pendown()
 
+# 随机选择乌龟朝向函数
 def random_direction():
     angle = random.randint(0,360)
     turtle.setheading(angle)
 
+# 画随机大小的正放形函数
 def draw_square():
     n = random.randint(10,100)
     for i in range(4):
         turtle.forward(n)
         turtle.right(90)
 
+# 设置turtle的形状
 turtle.shape("turtle")
+# 设置turtle的速度（0是最快，1-10之间逐渐变快）
 turtle.speed(0)
-
+# 设置turtle的颜色模式（这里参数永远是255）
 turtle.colormode(255)
 
-turtle.clear()
+# 画很多正方形
+turtle.clear() #清空屏幕
 for index in range(10):
     random_color()
     random_place()
@@ -95,13 +103,13 @@ for index in range(10):
     draw_square()
     turtle.end_fill()
 
-turtle.clear()
+# 画很多乌龟
+turtle.clear() #清空屏幕
 for index in range(30):
     random_color()
     random_place()
     random_direction()
     turtle.stamp()
-
 ```
 
 
