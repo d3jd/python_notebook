@@ -56,7 +56,7 @@ turtle.forward(x)
 
 ### turtle 和 random 综合使用例子
 
-**例子：现代艺术**：
+
 
 ```python
 # 导入模块
