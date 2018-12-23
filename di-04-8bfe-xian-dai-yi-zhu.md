@@ -15,7 +15,7 @@
     * 创建函数又叫做定义函数**（define a function)**
 
 ### 函数的用法
-例子：创建一个能画正放形的函数
+例子：创建一个**能画正放形的函数**
 ```python
 import turtle
 def draw_square():
@@ -23,7 +23,7 @@ def draw_square():
         turtle.forward(150)
         turtle.right(90)
 ```
-例子：调用函数
+例子：调用函数，画出正方形
 ```python
 draw_square()
 ```
