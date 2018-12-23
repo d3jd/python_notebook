@@ -51,29 +51,59 @@ turtle.forward(x)
 ```
 
 
-### Turtle 模块例子
+### turtle 和 random 综合使用例子
 
-turtle **画正放形**：
-```python
-for index in range(4):
-    forward(100)
-    right(90)
-```
-turtle **画三角形**：
-```python
-for index in range(3):
-    forward(100)
-    right(120)
-```
+**例子：现代艺术**：
 
-turtle **画n边形**：
 ```python
-n = 20
-for index in range(n):
-    forward(30)
-    right(360 / n)
+import turtle
+import random
+
+def random_color():
+  red = random.randint(0, 255)
+  green = random.randint(0, 255)
+  blue = random.randint(0, 255)
+  turtle.color(red, green, blue)
+
+def random_place():
+  turtle.penup()
+  x = random.randint(-100, 100)
+  y = random.randint(-100, 100)
+  turtle.goto(x, y)
+  turtle.pendown()
+
+def random_direction():
+    angle = random.randint(0,360)
+    turtle.setheading(angle)
+
+def draw_square():
+    n = random.randint(10,100)
+    for i in range(4):
+        turtle.forward(n)
+        turtle.right(90)
+
+turtle.shape("turtle")
+turtle.speed(0)
+
+turtle.colormode(255)
+
+turtle.clear()
+for index in range(10):
+    random_color()
+    random_place()
+    turtle.begin_fill()
+    draw_square()
+    turtle.end_fill()
+
+turtle.clear()
+for index in range(30):
+    random_color()
+    random_place()
+    random_direction()
+    turtle.stamp()
+
 ```
 
 
 ---
-![](/assets/屏幕快照 2018-12-15 上午11.20.45.png)
+![](/assets/第04课_现代艺术.jpg)
