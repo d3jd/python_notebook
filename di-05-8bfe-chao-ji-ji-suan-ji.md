@@ -77,4 +77,4 @@ print(sum)
 ```
 
 ---
-![](/assets/第04课_现代艺术.jpg)
+![](/assets/hw_05.png)
