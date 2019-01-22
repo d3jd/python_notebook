@@ -64,12 +64,13 @@ else:
 
 ### 求和
 
-例子：如果 a能被2整除, 则打印偶数的英文（even）, 否则打印奇数的英文（odd）
+例子：计算1000万以内所有是7的倍数的数的和
 
 ```python
 sum = 0
-for i in range(1000):
-    if i%3 == 0:
+n = 10000000
+for i in range(n):
+    if i%7 == 0:
         sum += i
 print(sum)
 
