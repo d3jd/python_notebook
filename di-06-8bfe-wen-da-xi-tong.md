@@ -109,4 +109,4 @@ else:
 ```
 
 ---
-![](/assets/hw_05.png)
+![](/assets/第06课_问答系统.png)
