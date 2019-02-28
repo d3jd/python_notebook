@@ -93,12 +93,18 @@ print('Hello ' + name + '!')
 例子：计算1000万以内所有是7的倍数的数的和
 
 ```python
-sum = 0
-n = 10000000
-for i in range(n):
-    if i%7 == 0:
-        sum += i
-print(sum)
+
+real_name = "皮卡丘"
+real_password = "654321"
+
+name = input('输入你的名字: ')
+password = input('输入你的密码: ')
+
+if real_name == name and real_password == password:
+    print('Welcome ' + name + '!')
+    print('Bingo!')
+else:
+    print('Wrong!')
 
 ```
 
