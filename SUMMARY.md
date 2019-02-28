@@ -6,4 +6,5 @@
 * [第03课-绘图神龟](hui-tu-shen-gui.md)
 * [第04课-现代艺术](di-04-8bfe-xian-dai-yi-zhu.md)
 * [第05课-超级计算机](di-05-8bfe-chao-ji-ji-suan-ji.md)
+* [第06课-问答系统](di-06-8bfe-wen-da-xi-tong.md)
 
