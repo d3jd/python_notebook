@@ -30,7 +30,6 @@ for letter in letters:
 
 ```
 
-
 ### 小技巧：提取字符串中的字母
 ```python
 letters = 'abcdefghijklmnopqrstuvwxyz'
