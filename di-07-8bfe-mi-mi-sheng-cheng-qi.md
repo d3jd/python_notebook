@@ -20,98 +20,29 @@
         * 密文中出现频率最高的字母对应原文字母e
         * 确定了一个字母，其它字母也就确定了，因为字母表是连续的
 
-### 逻辑的三种句式
+### 加密程序示例
 
-##### **if**：如果条件成立，就执行某件事
-
-```python
-a = 3
-b = 5
-if b > a:
-    print("cat")
-```
-##### **if else**：如果条件成立，就执行某件事，否则执行另外一件事
+##### 凯撒密码加密：输入原文（只能有小写字母和空格）和 钥匙，然后自动生成密文
 
 ```python
-a = 3
-b = 5
-if b > a:
-    print("cat")
-else:
-    print("dog")
-```
+letters = 'abcdefghijklmnopqrstuvwxyz'
 
-##### **if elif else**：如果条件成立，就执行某件事。否则如果下一个条件成立，就执行该条件对应的事。否则执行另外一件事。
+old_secret = input('Enter your secret: ')
+new_secret = ''
 
-```python
-a = 3
-b = 5
-if b > a:
-    print("cat")
-elif a > b:
-    print("dog")
-else:
-    print("fox")
-```
+key = input('Enter a number (1-26): ')
+key = int(key)
 
-
-### 逻辑运算符
-
-##### **and（与）**：两个条件必须同时成立
-
-例子：找到一亿以内所有7和13的倍数
-```python
-n = 1000000000
-for i in range(n):
-    if i%7 == 0 and i%13 == 0:
-        print(i)
-```
-
-##### **or（或）**：两个条件中至少成立一个
-例子：找到一千以内小于9或大于998的数
-```python
-n = 1000
-for i in range(n):
-    if i<9 or i>998:
-        print(i)
-```
-
-##### **not（非）**：条件不成立
-
-例子：找到一千以内不是不是10的倍数的数
-```python
-n = 1000
-for i in range(n):
-    if not not i%10 == 0:
-        print(i)
-```
-
-
-### 获得用户输入
-```python
-name = input('输入你的名字: ')
-print('Hello ' + name + '!')
-
-```
-
-
-### 简单的密码系统
-
-例子：计算1000万以内所有是7的倍数的数的和
-
-```python
-
-real_name = "皮卡丘"
-real_password = "654321"
-
-name = input('输入你的名字: ')
-password = input('输入你的密码: ')
-
-if real_name == name and real_password == password:
-    print('Welcome ' + name + '!')
-    print('Bingo!')
-else:
-    print('Wrong!')
+for letter in old_secret:
+    if letter == ' ':
+        new_secret += letter
+    else:
+        old_position = letters.find(letter) # 找到字母在原字母表中的位置
+        new_position = (old_position + key) % 26 # 找到字母在新字母表中的位置
+        new_letter = letters[new_position] # 提取出对应的字母
+        new_secret += new_letter # 将提取的字母添加到新的变量中
+            
+print('Your new secret is: ', new_secret)
 
 ```
 
