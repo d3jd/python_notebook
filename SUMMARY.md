@@ -7,4 +7,5 @@
 * [第04课-现代艺术](di-04-8bfe-xian-dai-yi-zhu.md)
 * [第05课-超级计算机](di-05-8bfe-chao-ji-ji-suan-ji.md)
 * [第06课-问答系统](di-06-8bfe-wen-da-xi-tong.md)
+* [第07课-秘密生成器](di-07-8bfe-mi-mi-sheng-cheng-qi.md)
 
