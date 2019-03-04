@@ -20,7 +20,27 @@
         * 密文中出现频率最高的字母对应原文字母e
         * 确定了一个字母，其它字母也就确定了，因为字母表是连续的
 
-### 加密程序示例
+
+### 小技巧：遍历字符串
+```python
+letters = 'abcdefghijklmnopqrstuvwxyz'
+
+for letter in letters:         
+    print('letter')
+
+```
+
+
+### 小技巧：提取字符串中的字母
+```python
+letters = 'abcdefghijklmnopqrstuvwxyz'
+print(letters[0])
+print(letters[1])
+print(letters[2])
+
+```
+
+### 例子：加密程序
 
 ##### 凯撒密码加密：输入原文（只能有小写字母和空格）和 钥匙，然后自动生成密文
 
