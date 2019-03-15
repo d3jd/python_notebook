@@ -15,22 +15,19 @@
 * 从列表删除元素用 pop() 函数
 * 遍历：将列表中的元素都读出来
 
-### 小技巧：遍历字符串
+### 小技巧：创建列表
 ```python
-letters = 'abcdefghijklmnopqrstuvwxyz'
-
-for letter in letters:         
-    print('letter')
-
+lottery = [12, 21, 31, 45, 20]
+homework = ["语文", "数学", "编程"]
+empty_list = []
 ```
 
-### 小技巧：提取字符串中的字母
+### 小技巧：读取列表中的元素
 ```python
-letters = 'abcdefghijklmnopqrstuvwxyz'
-print(letters[0])
-print(letters[1])
-print(letters[2])
-
+homework = ["语文", "数学", "编程"]
+print(homework[0])
+print(homework[1])
+print(homework[2])
 ```
 
 ### 例子：加密程序
