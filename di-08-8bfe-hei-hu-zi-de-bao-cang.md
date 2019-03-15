@@ -51,14 +51,16 @@ for i in homework:
     print(i)
 ```
 
+### 高端操作：逻辑嵌套
 
-
-
-### 例子：加密程序
-
+例子：2440 < x < 2470, 750 < y < 770, x乘以y等于1889121, x和y各是多少？
 ```python
-
+for x in range(2440, 2470):
+    for y in range(750, 770):
+        if x*y == 1889121:
+            print("x is: " + str(x))
+            print("y is: " + str(y))
 ```
 
 ---
-![](/assets/第07课_秘密生成器.png)
+![](/assets/幻灯片58.png)
