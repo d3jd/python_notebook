@@ -30,6 +30,20 @@ print(homework[1])
 print(homework[2])
 ```
 
+### 小技巧：向列表添加元素
+```python
+homework = ["语文", "数学", "编程"]
+homework.append("音乐")
+print(homework)
+```
+
+### 小技巧：从列表删除元素
+```python
+homework = ["语文", "数学", "编程"]
+homework.pop(1)
+print(homework)
+```
+
 ### 例子：加密程序
 
 ##### 凯撒密码加密：输入原文（只能有小写字母和空格）和 钥匙，然后自动生成密文
