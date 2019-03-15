@@ -44,9 +44,17 @@ homework.pop(1)
 print(homework)
 ```
 
-### 例子：加密程序
+### 小技巧：遍历一个列表
+```python
+homework = ["语文", "数学", "编程"]
+for i in homework:
+    print(i)
+```
 
-##### 凯撒密码加密：输入原文（只能有小写字母和空格）和 钥匙，然后自动生成密文
+
+
+
+### 例子：加密程序
 
 ```python
 
