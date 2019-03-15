@@ -8,4 +8,5 @@
 * [第05课-超级计算机](di-05-8bfe-chao-ji-ji-suan-ji.md)
 * [第06课-问答系统](di-06-8bfe-wen-da-xi-tong.md)
 * [第07课-秘密生成器](di-07-8bfe-mi-mi-sheng-cheng-qi.md)
+* [第08课-黑胡子的宝藏](di-08-8bfe-hei-hu-zi-de-bao-cang.md)
 
