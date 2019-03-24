@@ -15,12 +15,31 @@
 * 从列表删除元素用 pop() 函数
 * 遍历：将列表中的元素都读出来
 
-### 小技巧：创建列表
+### 小技巧：无限循环
 ```python
-lottery = [12, 21, 31, 45, 20]
-homework = ["语文", "数学", "编程"]
-empty_list = []
+while True:
+    print("Big Heart!")
+    print("small heart")
 ```
+
+### 小技巧：数据结构：字典
+```python
+# 个人档案
+somebody = { "名字": "李好", "年龄": 104, "爱好": "唱歌"}
+
+print(somebody['名字'])
+print(somebody['年龄'])
+print(somebody['爱好'])
+
+# 游戏人物
+pikachu = {"名字": "皮卡丘", "等级": 45, "职业": "剑客", "经验值": "1023"}
+
+print(pikachu['名字'])
+print(pikachu['等级'])
+print(pikachu['职业'])
+print(pikachu['经验值'])
+```
+
 
 ### 例子：空间站中都有谁？
 ```python
