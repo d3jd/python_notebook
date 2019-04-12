@@ -11,4 +11,5 @@
 * [第08课-黑胡子的宝藏](di-08-8bfe-hei-hu-zi-de-bao-cang.md)
 * [第09课-定位国际空间站](di-09-8bfe-ding-wei-guo-ji-kong-jian-zhan.md)
 * [第10课-树莓派](di-10-8bfe-shu-mei-pai.md)
+* [第11课-我的世界](di-11-8bfe-wo-de-shi-jie.md)
 
