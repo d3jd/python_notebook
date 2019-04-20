@@ -62,7 +62,7 @@ while i < 5000000000:
 
 ## 例子：利用循环自动在脚底生成方块
 
-
+![](/assets/block_below.png)
 ```python
 from mcpi.minecraft import Minecraft
 import time
@@ -89,4 +89,4 @@ while True:
 ```
 
 ---
-![](/assets/第12课_我的世界 (另一种循环).png)
+![](/assets/lesson_12.png)
