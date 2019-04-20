@@ -64,13 +64,28 @@ while i < 5000000000:
 
 
 ```python
-i = 0
-while i < 5000000000:
-    print(i)
-    if i == 3:
-        break  
-    i += 1
-```
+from mcpi.minecraft import Minecraft
+import time
 
+mc = Minecraft.create()
+
+# 设定方块类型
+block = input("Enter a block type: ")
+
+while True:
+    # 获得用户最新坐标
+    pos = mc.player.getPos()
+    x = pos.x
+    y = pos.y
+    z = pos.z
+
+    # 将y改成用户脚下的坐标
+    y -= 1
+
+    # 在用户脚下设置方块
+    mc.setBlock(x, y, z, block)
+    time.sleep(0.2)
+
+```
 
 ---
