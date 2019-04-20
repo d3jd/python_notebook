@@ -12,4 +12,5 @@
 * [第09课-定位国际空间站](di-09-8bfe-ding-wei-guo-ji-kong-jian-zhan.md)
 * [第10课-树莓派](di-10-8bfe-shu-mei-pai.md)
 * [第11课-我的世界](di-11-8bfe-wo-de-shi-jie.md)
+* [第12课-我的世界：另一种循环](di-12-8bfe-wo-de-shi-jie-ff1a-ling-yi-zhong-xun-huan.md)
 
