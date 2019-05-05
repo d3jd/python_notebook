@@ -87,4 +87,4 @@ while True:
 
 
 ---
-![](/assets/第13课_我的世界 (点石成金).png)
+![](/assets/hw_13.png)
