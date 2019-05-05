@@ -13,4 +13,5 @@
 * [第10课-树莓派](di-10-8bfe-shu-mei-pai.md)
 * [第11课-我的世界](di-11-8bfe-wo-de-shi-jie.md)
 * [第12课-我的世界：另一种循环](di-12-8bfe-wo-de-shi-jie-ff1a-ling-yi-zhong-xun-huan.md)
+* [第13课-我的世界：点石成金](di-13-8bfe-wo-de-shi-jie-ff1a-dian-shi-cheng-jin.md)
 
