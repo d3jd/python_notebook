@@ -2,26 +2,33 @@
 
 ## 本课知识点回顾
 
-* 我的世界中的四个基本函数：
+* 之前学过的我的世界中的四个基本函数：
     * **获取玩家位置：**mc.player.getPos()
     * **设置玩家位置：** mc.player.setPos(x, y, z)
     * **获取方块类型：**mc.getBlock()
     * **放置方块：**mc.setBlock(x, y, z, block)
+* 虚拟世界和3D游戏运行的基本机制：
+    * 每个游戏都由一个巨大的无限循环组成
+    * 循环由三个部分组成
+        * 事件发生（发球，发射子弹，被击中）
+        * 更新游戏（修改生命值，修改弹药数）
+        * 渲染画面 （将画面画在屏幕上）
+    * 游戏的很多功能（比如发球，被子弹击中）都依赖于一个重要的概念：**碰撞检测**
+    * **碰撞检测**：检测两个物体是否碰到了
+* 我的世界中进行碰撞检测的函数
+    * **mc.events.pollBlockHits()**
 
-
-## 例子：获得玩家坐标
+## 例子：pollBlockHits() 的使用方法
+将剑（鼠标右键）击中的方块变成金子
 
 ```python
 from mcpi.minecraft import Minecraft
 mc = Minecraft.create()
 
-pos = mc.player.getPos()
-x = pos.x
-y = pos.y
-z = pos.z
-
-print(x, y ,z)
-
+while True:
+    hits = mc.events.pollBlockHits()
+    for hit in hits:
+        mc.setBlock(hit.pos.x, hit.pos.y, hit.pos.z, 41)
 ```
 
 ## 例子：如影随形
@@ -35,25 +42,27 @@ mc = Minecraft.create()
 import random
 import time
 
-pos = mc.player.getPos()
-x = pos.x
-y = pos.y
-z = pos.z
+block = 41 # 黄金方块
 
-count = 0
 while True:
-    blocks = [57, 41, 22, 42, 103]
-    block = random.choice(blocks)
+    # 获得玩家位置
+    pos = mc.player.getPos()
+    x = pos.x
+    y = pos.y
+    z = pos.z
 
-    mc.setBlock(x + 3, y, z, block)
+    # 在玩家附近生成15个方块
+    for i in range(15):
+        # 随机生成玩家附近的位置
+        x_range = random.randint(-10, 10)
+        y_range = random.randint(-10, 10)
+        z_range = random.randint(-10, 10)
 
-    count += 1
-    time.sleep(1)
+        # 生成方块
+        mc.setBlock(x + x_range, y + y_range, z + z_range, block)
 
-    if (block == 41):
-        break
+    time.sleep(5)
 
-mc.postToChat(count)
 
 ```
 
