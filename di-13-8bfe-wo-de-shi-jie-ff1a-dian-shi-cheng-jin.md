@@ -73,25 +73,27 @@ while True:
 
 ```python
 from mcpi.minecraft import Minecraft
+import time
 mc = Minecraft.create()
 
 block = 41 #使用黄金方块
 
 while True:
     # 获得玩家位置
-    pos = mc.player.getPos()
+    pos = mc.player.getTilePos()
     x = pos.x
     y = pos.y
     z = pos.z
 
-    # 将生成位置设为头顶5格处
-    y += 5
+    # 将生成位置设为头顶3格处
+    y += 3
 
-    # 利用多重循环生成大方块
-    for i in range(x-3, x+3):
-        for j in range(y-3, y+3):
-            for k in range(z-3, z+3):
+    # 利用多重循环在玩家头顶生成大方块
+    for i in range(6):
+        for j in range(6):
+            for k in range(6):
                 mc.setBlock(x + i, y + j, z + k, block)
+    time.sleep(1)
 
 
 ```
