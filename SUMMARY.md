@@ -14,4 +14,5 @@
 * [第11课-我的世界](di-11-8bfe-wo-de-shi-jie.md)
 * [第12课-我的世界：另一种循环](di-12-8bfe-wo-de-shi-jie-ff1a-ling-yi-zhong-xun-huan.md)
 * [第13课-我的世界：点石成金](di-13-8bfe-wo-de-shi-jie-ff1a-dian-shi-cheng-jin.md)
+* [第14课 - 我的世界: 自动建筑](di-14-ke-wo-de-shi-754c3a-zi-dong-jian-zhu.md)
 
