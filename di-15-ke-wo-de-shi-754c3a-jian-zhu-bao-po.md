@@ -54,10 +54,7 @@ def pyramid(levels):
 
     for i in range(levels):
         width = levels - i
-        if i == 0:
-            mc.setBlocks(x-width, y+i, z-width, x+width, y+i, z+width, tnt_block, 1)
-        else:
-            mc.setBlocks(x-width, y+i, z-width, x+width, y+i, z+width, sand_block)
+        mc.setBlocks(x-width, y+i, z-width, x+width, y+i, z+width, sand_block)
 
 pyramid(10)
 ```
@@ -83,6 +80,37 @@ mc.setBlock(x+1, y+1, z+1, tnt_block, 1)
 # tnt cube
 mc.setBlocks(x+1, y+1, z+1, x+5, y+5, z+5, tnt_block, 1)
 ```
+
+## 例子：金字塔爆破
+修改之前的金字塔程序，将其金字塔最底层变成TNT方块，其它方块的材料保持不变
+![](/assets/pyramid_bomb.png)
+
+```python
+from mcpi.minecraft import Minecraft
+mc = Minecraft.create()
+
+
+def pyramid(levels):
+    sand_block = 24
+    tnt_block = 46
+
+    pos = mc.player.getPos()
+    x = pos.x
+    y = pos.y
+    z = pos.z
+    x += levels
+
+    for i in range(levels):
+        width = levels - i
+        if i == 0:
+            mc.setBlocks(x-width, y+i, z-width, x+width, y+i, z+width, tnt_block, 1)
+        else:
+            mc.setBlocks(x-width, y+i, z-width, x+width, y+i, z+width, sand_block)
+
+pyramid(10)
+```
+
+
 
 ---
 ![](/assets/屏幕快照 2019-05-25 下午12.34.21.png)
