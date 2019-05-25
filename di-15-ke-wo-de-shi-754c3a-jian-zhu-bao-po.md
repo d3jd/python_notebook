@@ -62,5 +62,27 @@ def pyramid(levels):
 pyramid(10)
 ```
 
+## 例子：巨型炸药
+写一个能够生成任意大小金字塔的函数
+![](/assets/tnt_bomb.png)
+
+```python
+from mcpi.minecraft import Minecraft
+mc = Minecraft.create()
+
+pos = mc.player.getPos()
+x = pos.x
+y = pos.y
+z = pos.z
+
+tnt_block = 46
+
+# single tnt block
+mc.setBlock(x+1, y+1, z+1, tnt_block, 1)
+
+# tnt cube
+mc.setBlocks(x+1, y+1, z+1, x+5, y+5, z+5, tnt_block, 1)
+```
+
 ---
 ![](/assets/屏幕快照 2019-05-25 下午12.34.21.png)
