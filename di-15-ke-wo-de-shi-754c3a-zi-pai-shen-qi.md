@@ -69,6 +69,5 @@ camera.stop_preview() # 关闭照相机
 
 
 
-
 ---
 ![](/assets/屏幕快照 2019-06-01 下午1.34.12.png)
