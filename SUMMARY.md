@@ -16,4 +16,5 @@
 * [第13课-我的世界：点石成金](di-13-8bfe-wo-de-shi-jie-ff1a-dian-shi-cheng-jin.md)
 * [第14课 - 我的世界: 自动建筑](di-14-ke-wo-de-shi-754c3a-zi-dong-jian-zhu.md)
 * [第15课 - 我的世界: 建筑爆破](di-15-ke-wo-de-shi-754c3a-jian-zhu-bao-po.md)
+* [第16课 - 我的世界: 自拍神器](di-15-ke-wo-de-shi-754c3a-zi-pai-shen-qi.md)
 
