@@ -17,4 +17,5 @@
 * [第14课 - 我的世界: 自动建筑](di-14-ke-wo-de-shi-754c3a-zi-dong-jian-zhu.md)
 * [第15课 - 我的世界: 建筑爆破](di-15-ke-wo-de-shi-754c3a-jian-zhu-bao-po.md)
 * [第16课 - 我的世界: 自拍神器](di-15-ke-wo-de-shi-754c3a-zi-pai-shen-qi.md)
+* [第16.5课\_未来应该学什么](di-16-5-ke-wei-lai-ying-gai-xue-shi-yao.md)
 
