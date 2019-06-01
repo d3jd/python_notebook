@@ -9,25 +9,19 @@
     * 侦察车
     * 缩时摄影
 
-## 例子：金字塔（手动版）
-写一个能够生成高三层金字塔的程序
-![](/assets/屏幕快照 2019-05-25 下午12.46.11.png)
+## 例子：启动摄像头
+用程序开启摄像头，5秒后自动关闭
 ```python
-from mcpi.minecraft import Minecraft
-mc = Minecraft.create()
+from picamera import PiCamera  # 导入照相机模块
+import time
 
-# 获得玩家位置
-pos = mc.player.getPos()
-x = pos.x
-y = pos.y
-z = pos.z
+camera = PiCamera()  # 与照相机建立连接
 
-sand_block = 24
+camera.start_preview()  # 启动照相机
 
-# 生成小金字塔
-mc.setBlocks(x - 2, y + 0, z - 2, x + 2, y + 0, z + 2, sand_block)
-mc.setBlocks(x - 1, y + 1, z - 1, x + 1, y + 1, z + 1, sand_block)
-mc.setBlocks(x - 0, y + 2, z - 0, x + 0, y + 2, z + 0, sand_block)
+time.sleep(5)  # 暂停 5秒
+
+camera.stop_preview()  # 关闭照相机
 
 ```
 
