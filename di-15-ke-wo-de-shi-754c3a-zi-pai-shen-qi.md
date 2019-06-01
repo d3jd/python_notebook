@@ -67,6 +67,27 @@ camera.stop_preview() # 关闭照相机
 
 ```
 
+## 例子：视频录制程序
+录制一个短视频
+
+第1步：写视频录制程序并运行
+```python
+from picamera import PiCamera  # 导入照相机模块
+import time
+
+camera = PiCamera()  # 与照相机建立连接
+camera.resolution = (640, 360)  # 将照片分辨率变小
+
+camera.start_preview()  # 启动照相机
+
+camera.start_recording('/home/pi/video.h264')  # 开始录制视频
+time.sleep(10)  # 等待10秒
+camera.stop_recording()  # 结束录制视频
+camera.stop_preview()  # 关闭照相机
+```
+第2步：用CLI将录制好的视频转换成mp4格式
+sudo apt-get install gpac
+MP4Box -add video.h264 something.mp4
 
 
 ---
