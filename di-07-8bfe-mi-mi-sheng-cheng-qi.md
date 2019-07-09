@@ -66,4 +66,4 @@ print('Your new secret is: ', new_secret)
 ```
 
 ---
-![](/assets/第07课_秘密生成器.png)
+![](/assets/屏幕快照 2019-07-09 下午8.45.25.png)
