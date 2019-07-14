@@ -4,8 +4,9 @@
 
 * 树莓派是什么？
     * 一个超小但功能齐全的微型计算机
-    * 最大的长处是可以运行**Linux 操作系统**
     ![](/assets/rpi.png)
+    * 最大的长处是可以运行**Linux 操作系统**
+    ![](/assets/屏幕快照 2019-07-14 下午10.09.46.png)
 * 操作系统是什么？
     * 使人可以和电脑交流的界面和工具
     * 世界三大操作系统：
@@ -22,14 +23,15 @@
     * touch： 创建新文件
     * rm： 删除文件
     * cat：查看文件内容
+    * date：显示时间
+    * history: 显示之前使用过的命令
     * clear：清空屏幕
     * poweroff：关机
     * reboot：重启
 * 用**命令行（CLI）**运行Python程序
-    * 进入python对话模式
     * python + 程序文件名
 
-## 从CLI进入Python 的对话模式 （又叫REPL）
+## 从CLI进入Python 的对话模式
 
 ![](/assets/REPL.png)
 
